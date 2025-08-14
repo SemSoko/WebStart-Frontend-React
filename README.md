@@ -1,3 +1,34 @@
+# Projektstruktur
+
+```
+WebStart-Frontend-React/                                 
+├── node_modules/                                         # Abhängigkeiten (automatisch durch npm install generiert)
+├── public/                                               # Statische öffentliche Dateien (z. B. favicon, robots.txt)
+├── src/                                                  # Haupt-Quellcode des React-Frontends
+│    ├─── api/                                            # API-Wrapper (z. B. auth.ts, todo.ts) – zentrale Stelle für HTTP-Requests
+│    ├─── assets/                                         # Statische Assets wie Bilder, SVGs oder Logos
+│    ├─── components/                                     # Wiederverwendbare UI-Komponenten (z. B. Buttons, Modals, Inputs)
+│    ├─── features/                                       # Feature-spezifische Komponenten & Logik (z. B. Auth, Todo, Booking)
+│    ├─── hooks/                                          # Custom Hooks (z. B. useAuth, useApiErrorHandler)
+│    ├─── pages/                                          # Seitenkomponenten für Routing-Ziele (z. B. LoginPage, DashboardPage)
+│    ├─── types/                                          # Globale TypeScript-Typdefinitionen & Interfaces
+│    ├─── App.css                                         # Globale App-spezifische CSS-Stile
+│    ├─── App.tsx                                         # Einstiegskomponente – enthält Router & grundlegende Layoutstruktur
+│    ├─── index.css                                       # Globale Styles (Tailwind oder andere Basisdefinitionen)
+│    ├─── main.tsx                                        # Einstiegspunkt der React-App – ReactDOM.render bzw. createRoot()
+│    └─── vite-env.d.ts                                   # Vite-generierte Umgebungsdefinitionen für TypeScript
+├── .gitignore                                            # Dateien & Ordner, die Git ignorieren soll
+├── eslint.config.js                                      # Konfiguration für ESLint – Codequalität & Linting-Regeln
+├── index.html                                            # HTML-Einstiegspunkt für das SPA – wird von Vite benutzt
+├── package.json                                          # Projektdefinition, Abhängigkeiten & Skripte
+├── package-lock.json                                     # Lockfile zur genauen Auflösung von Abhängigkeiten
+├── README.md                                             # Projektdokumentation
+├── tsconfig.app.json                                     # TypeScript-Konfiguration für das Anwendungsprojekt
+├── tsconfig.json                                         # Basis-Konfiguration für TypeScript (wird von anderen tsconfigs erweitert)
+├── tsconfig.node.json                                    # TypeScript-Konfiguration für node-spezifische Tools (z. B. ESLint, Scripts)
+└── vite.config.ts                                        # Konfiguration für Vite (z. B. Aliases, Plugins, Dev-Server)
+```
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
