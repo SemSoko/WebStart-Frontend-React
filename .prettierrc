@@ -1,0 +1,8 @@
+{
+	"semi": true,				// Fuegt am Ende jeder Anweisung ein Semikolon ein (;), vermeidet ASI-Probleme
+	"singleQuote": true,		// Verwendet einfache Anfuehrungszeichen ('...') statt doppelte ("...")
+	"printWidth": 100,			// Maximale Zeichen pro Zeile, bevor Prettier einen Zeilenumbruch einfuegt
+	"tabWidth": 4,				// Anzahl an Leerzeichen pro Tab (Einrueckung)
+	"trailingComma": "es5",		// Fuegt nach dem letzten Element in Arrays/Objekten ein Komma ein (sofern in ES5 erlaubt) - hilft bei Git-Diffs
+	"endOfLine": "lf"			// Erzwingt Unix-Zeilenenden (\n) statt Windows (\r\n) - vermeidet CRLF/LF-Mischungen
+}
