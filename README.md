@@ -90,6 +90,17 @@ Ergebnis:\
 - Sichere, automatisierte Korrekturen
 - Minimaler Overhead, aber Best Practices für React + TypeScript sind gewährleistet
 
+### Pfad-Aliases (TypeScript + Vite)
+
+- In `tsconfig.app.json` → `baseUrl` und `paths` definiert.
+- In `vite.config.ts` → `resolve.alias` ergänzt, damit die Aliases auch im Build/Dev-Server funktionieren.
+- Beispiel:
+```
+import { login } from '@api/auth';
+statt
+import { login } from '../../api/auth';
+```
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
