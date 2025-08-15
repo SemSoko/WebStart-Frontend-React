@@ -1,0 +1,4 @@
+node_modules	# Ignoriert alle installierten Pakete (braucht man nicht formatieren)
+dist			# Ignoriert Build-Output von Vite
+build			# Ignoriert alternativen Build-Output (falls vorhanden)
+coverage		# Ignoriert Coverage-Reports (z.B. von Tests)
