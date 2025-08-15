@@ -29,6 +29,65 @@ WebStart-Frontend-React/
 └── vite.config.ts                                        # Konfiguration für Vite (z. B. Aliases, Plugins, Dev-Server)
 ```
 
+# ESLint + Prettier Setup
+
+Dieses Projekt nutzt ESLint (Codeanalyse) und Prettier (Codeformatierung), um
+sauberen, konsistenten und fehlerfreien Code sicherzustellen.\
+Das Setup ist minimal gehalten, aber deckt TypeScript + React + Hooks vollständig ab.
+
+## Installation
+
+```
+npm install -D eslint typescript-eslint eslint-plugin-react eslint-plugin-react-hooks prettier eslint-config-prettier
+```
+
+Warum -D (Dev-Dependencies)?\
+- Diese Tools werden nur während der Entwicklung gebraucht, nicht im finalen Build.
+- Verringert die Größe des ausgelieferten Bundles.
+- Standardpraxis für Linter, Formatter, Build- und Testtools.
+
+## Pakete & Zweck
+
+Paket\
+Zweck
+
+`eslint`\
+Kern-Linter für JavaScript/TypeScript
+
+`typescript-eslint`\
+TypeScript-Parser + ESLint-Regeln für TS
+
+`eslint-plugin-react`\
+React-spezifische Regeln
+
+`eslint-plugin-react-hooks`\
+Best Practices für Hooks (z. B. useEffect-Dependencies)
+
+`prettier`\
+Codeformatter (Stilregeln)
+
+`eslint-config-prettier`\
+Deaktiviert ESLint-Regeln, die mit Prettier kollidieren
+
+## Konfigurationsdateien
+
+`eslint.config.js` - Definiert Linting-Regeln, Plugins und Ignorierlisten für TypeScript + React + Hooks, inklusive Prettier-Integration.
+`.prettierrc` - Legt Formatierungsstil fest (z. B. Anführungszeichen, Semikolons, Zeilenlänge).
+`.prettierignore` - Schließt bestimmte Verzeichnisse/Dateien vom Formatieren aus
+`package.json` → Scripts - Enthält NPM-Befehle zum Ausführen von Linting (lint, lint:fix) und Prettier (format, format:check).
+
+Scripts:\
+- npm run lint → Code auf Probleme prüfen
+- npm run lint:fix → Probleme automatisch beheben (soweit möglich)
+- npm run format → gesamten Code mit Prettier formatieren
+- npm run format:check → prüfen, ob Code Prettier-Regeln entspricht
+
+Ergebnis:\
+- Einheitlicher Code-Stil
+- Sofortige Fehlererkennung
+- Sichere, automatisierte Korrekturen
+- Minimaler Overhead, aber Best Practices für React + TypeScript sind gewährleistet
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
