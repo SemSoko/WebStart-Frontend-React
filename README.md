@@ -18,6 +18,8 @@ WebStart-Frontend-React/
 │    ├─── main.tsx                                        # Einstiegspunkt der React-App – ReactDOM.render bzw. createRoot()
 │    └─── vite-env.d.ts                                   # Vite-generierte Umgebungsdefinitionen für TypeScript
 ├── .gitignore                                            # Dateien & Ordner, die Git ignorieren soll
+├── .prettierignore                                       # Dateien/Ordner, die Prettier beim Formatieren ignorieren soll
+├── .prettierrc                                           # Projektweite Prettier-Formatierungsregeln
 ├── eslint.config.js                                      # Konfiguration für ESLint – Codequalität & Linting-Regeln
 ├── index.html                                            # HTML-Einstiegspunkt für das SPA – wird von Vite benutzt
 ├── package.json                                          # Projektdefinition, Abhängigkeiten & Skripte
