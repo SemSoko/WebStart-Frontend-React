@@ -12,6 +12,7 @@ WebStart-Frontend-React/
 │    ├─── hooks/                                          # Custom Hooks (z. B. useAuth, useApiErrorHandler)
 │    ├─── pages/                                          # Seitenkomponenten für Routing-Ziele (z. B. LoginPage, DashboardPage)
 │    ├─── types/                                          # Globale TypeScript-Typdefinitionen & Interfaces
+│    │    └─── auth.ts                                    # Typdefinitionen fuer Auth-Endpunkte
 │    ├─── App.css                                         # Globale App-spezifische CSS-Stile
 │    ├─── App.tsx                                         # Einstiegskomponente – enthält Router & grundlegende Layoutstruktur
 │    ├─── index.css                                       # Globale Styles (Tailwind oder andere Basisdefinitionen)
