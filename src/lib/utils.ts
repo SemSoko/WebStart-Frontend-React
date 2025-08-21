@@ -13,4 +13,4 @@ export function cn(...inputs: ClassValue[]) {
  * Re-export tailwind-variants helpers so you can:
  *	import { tv, type VariantProps } from "@/lib/utils";
  */
-export { tv, type VariantProp } from "tailwind-variants";
+export { tv, type VariantProps } from "tailwind-variants";
