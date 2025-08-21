@@ -101,6 +101,14 @@ statt
 import { login } from '../../api/auth';
 ```
 
+# UI-Stack (Tailwind + shadcn/ui + Utilities)
+
+Dieses Projekt nutzt ein modernes UI-Setup aus:
+
+- **Tailwind CSS v4** → Utility-first CSS Framework für Layout, Farben, Abstände und Responsiveness.
+- **shadcn/ui** → vorgefertigte, barrierefreie React-Komponenten
+- **Utilities** (`clsx`, `tailwind-merge`, `tailwind-variants`) → saubere und erweiterbare Klassenverwaltung.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
