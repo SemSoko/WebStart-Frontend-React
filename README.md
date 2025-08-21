@@ -6,6 +6,8 @@ WebStart-Frontend-React/
 ├── public/                                               # Statische öffentliche Dateien (z. B. favicon, robots.txt)
 ├── src/                                                  # Haupt-Quellcode des React-Frontends
 │    ├─── api/                                            # API-Wrapper (z. B. auth.ts, todo.ts) – zentrale Stelle für HTTP-Requests
+│    │    ├─── auth.ts                                    # Wrapper-Funktion(en) für Auth-Endpunkte wie Login, Logout, Refresh
+│    │    └─── axios.ts                                   # Gemeinsame Axios-Instanz mit Basis-Konfiguration für alle API-Requests
 │    ├─── assets/                                         # Statische Assets wie Bilder, SVGs oder Logos
 │    ├─── components/                                     # Wiederverwendbare UI-Komponenten (z. B. Buttons, Modals, Inputs)
 │    ├─── features/                                       # Feature-spezifische Komponenten & Logik (z. B. Auth, Todo, Booking)
@@ -31,6 +33,13 @@ WebStart-Frontend-React/
 ├── tsconfig.node.json                                    # TypeScript-Konfiguration für node-spezifische Tools (z. B. ESLint, Scripts)
 └── vite.config.ts                                        # Konfiguration für Vite (z. B. Aliases, Plugins, Dev-Server)
 ```
+
+# API-Kommunikation
+
+Das Projekt nutzt `axios` für HTTP-Requests zum Backend.\
+Es wurde eine zentrale Axios-Instanz in `src/api/axios.ts` eingerichtet (mit Base-URL `/api/v1` und\
+JSON-Headern), um die API-Kommunikation zu vereinheitlichen und künftige Erweiterungen (z. B. Token-\
+Interceptors) zu erleichtern.
 
 # ESLint + Prettier Setup
 
